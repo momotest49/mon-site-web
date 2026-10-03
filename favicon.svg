@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="100%" height="100%">
+  <defs>
+    <linearGradient id="symGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#063B2A" />
+      <stop offset="100%" stop-color="#16C784" />
+    </linearGradient>
+  </defs>
+  <!-- Background rounded squircle -->
+  <rect width="120" height="120" rx="28" fill="#063B2A" />
+  <!-- Left lower chevron -->
+  <path d="M 28 68 L 52 44 L 62 52 L 42 72 L 56 72 L 50 82 L 28 82 Z" fill="#16C784" stroke="#FFFFFF" stroke-width="1.5" stroke-linejoin="round" />
+  <!-- Right upper chevron with arrow head -->
+  <path d="M 52 44 L 72 24 L 92 24 L 92 44 L 82 38 L 82 52 L 68 66 L 58 58 L 72 44 Z" fill="#16C784" stroke="#FFFFFF" stroke-width="1.5" stroke-linejoin="round" />
+  <!-- Exponent 2 -->
+  <text x="100" y="32" fill="#16C784" font-family="'Plus Jakarta Sans', sans-serif" font-weight="900" font-size="20">²</text>
+</svg>
