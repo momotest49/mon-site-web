@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHIFT² — Transformation numérique à Ouagadougou</title>
+  <meta name="description" content="SHIFT² accompagne entreprises, organisations et professionnels dans leur transformation numérique : formation, IA, communication digitale, création web, visibilité locale et outils collaboratifs. Basé à Ouagadougou, Burkina Faso.">
+  <meta name="theme-color" content="#063B2A">
+  <link rel="icon" type="image/svg+xml" href="assets/logo/favicon.svg">
+  
+  <!-- Polices Google Web Fonts : Plus Jakarta Sans (Moderne, géométrique et lisible) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- =========================================================================
+       01 — NAVIGATION (Fixed Glassmorphic Header)
+       ========================================================================= -->
+  <header class="site-header" id="navbar">
+    <div class="container header-container">
+      <a href="#hero" class="brand-link" aria-label="SHIFT² Accueil">
+        <div class="logo-wrapper">
+          <img src="assets/logo/shift2-logo.png" alt="SHIFT² — Logo Officiel" class="brand-logo" width="180" height="76">
+        </div>
+      </a>
+
+      <!-- Menu Principal Desktop -->
+      <nav class="main-nav" aria-label="Navigation principale">
+        <ul class="nav-list">
+          <li><a href="#hero" class="nav-link active">Accueil</a></li>
+          <li><a href="#solutions" class="nav-link">Solutions</a></li>
+          <li><a href="#approche" class="nav-link">Notre approche</a></li>
+          <li><a href="#a-propos" class="nav-link">À propos</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Bouton & Mobile Toggle -->
+      <div class="header-actions">
+        <a href="#contact" class="btn btn-primary nav-cta">
+          <span>Parlons de votre projet</span>
+          <svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+
+        <button type="button" class="mobile-toggle" id="mobileMenuBtn" aria-label="Ouvrir le menu de navigation" aria-expanded="false" aria-controls="mobileMenu">
+          <span class="bar bar-1"></span>
+          <span class="bar bar-2"></span>
+          <span class="bar bar-3"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+      <div class="mobile-menu-inner">
+        <ul class="mobile-nav-list">
+          <li><a href="#hero" class="mobile-link">Accueil</a></li>
+          <li><a href="#solutions" class="mobile-link">Solutions</a></li>
+          <li><a href="#approche" class="mobile-link">Notre approche</a></li>
+          <li><a href="#a-propos" class="mobile-link">À propos</a></li>
+          <li><a href="#contact" class="mobile-link">Contact</a></li>
+        </ul>
+        <div class="mobile-cta-group">
+          <a href="#contact" class="btn btn-primary btn-block">
+            <span>Parlons de votre projet</span>
+          </a>
+          <div class="mobile-direct-links">
+            <a href="tel:+22666703683" class="btn btn-secondary btn-sm">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              <span>+226 66 70 36 83</span>
+            </a>
+            <a href="https://wa.me/22666703683" target="_blank" rel="noopener" class="btn btn-whatsapp btn-sm">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+              <span>WhatsApp Direct</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       02 — HERO SECTION
+       ========================================================================= -->
+  <section class="hero-section" id="hero">
+    <!-- Fond interactif et subtile lueur cinétique -->
+    <div class="hero-backdrop">
+      <div class="radial-glow glow-1"></div>
+      <div class="radial-glow glow-2"></div>
+      <canvas id="kineticCanvas" class="hero-canvas"></canvas>
+    </div>
+
+    <div class="container hero-container">
+      <div class="hero-content">
+        <!-- Badge de positionnement & localisation -->
+        <div class="hero-badge reveal-elem">
+          <span class="badge-dot"></span>
+          <span class="badge-text">SHIFT² — Transformation numérique</span>
+          <span class="badge-divider">·</span>
+          <span class="badge-loc">Ouagadougou · Burkina Faso</span>
+        </div>
+
+        <!-- Titre Principal -->
+        <h1 class="hero-title reveal-elem">
+          ON CHANGE<br>
+          <span class="text-gradient">DE MODE.</span>
+        </h1>
+
+        <!-- Texte secondaire officiel -->
+        <p class="hero-subtext reveal-elem">
+          Le numérique peut faire bien plus que digitaliser votre activité.
+          Il peut vous aider à mieux travailler, mieux communiquer et aller plus loin.
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="hero-cta-group reveal-elem">
+          <a href="#contact" class="btn btn-primary btn-lg">
+            <span>Parlons de votre projet</span>
+            <svg class="btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+          <a href="#solutions" class="btn btn-outline btn-lg">
+            <span>Découvrir nos solutions</span>
+          </a>
+        </div>
+
+        <!-- Indicateurs de confiance -->
+        <div class="hero-metrics reveal-elem">
+          <div class="metric-item">
+            <span class="metric-val">100%</span>
+            <span class="metric-lbl">Utile &amp; Réel</span>
+          </div>
+          <div class="metric-separator"></div>
+          <div class="metric-item">
+            <span class="metric-val">5</span>
+            <span class="metric-lbl">Solutions Majeures</span>
+          </div>
+          <div class="metric-separator"></div>
+          <div class="metric-item">
+            <span class="metric-val">Burkina &amp; +</span>
+            <span class="metric-lbl">Local &amp; À distance</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Composition Visuelle Hero -->
+      <div class="hero-visual reveal-elem">
+        <div class="hero-visual-frame">
+          <img src="assets/images/hero-kinetic.svg" alt="SHIFT² — Composition Graphique de Transformation Numérique" class="hero-img" width="900" height="700" loading="eager">
+          <!-- Floating Brand Tag -->
+          <div class="floating-tag tag-top">
+            <span class="tag-icon">²</span>
+            <span>Accélérateur d'usages</span>
+          </div>
+          <div class="floating-tag tag-bottom">
+            <span class="status-indicator"></span>
+            <span>Ouagadougou · Burkina Faso</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll down indicator -->
+    <a href="#pourquoi-shift2" class="scroll-indicator" aria-label="Défiler vers la suite">
+      <span class="scroll-mouse">
+        <span class="scroll-wheel"></span>
+      </span>
+      <span class="scroll-text">Explorer</span>
+    </a>
+  </section>
+
+  <!-- =========================================================================
+       03 — INTRODUCTION (Éditoriale & Forte)
+       ========================================================================= -->
+  <section class="section section-intro" id="pourquoi-shift2">
+    <div class="container">
+      <div class="section-intro-grid">
+        <div class="intro-label-col">
+          <div class="section-pill">POURQUOI SHIFT² ?</div>
+          <div class="accent-callout">
+            <p class="highlight-quote">Moins de complexité.<br><span class="text-accent">Plus d'impact.</span></p>
+          </div>
+        </div>
+
+        <div class="intro-content-col">
+          <h2 class="editorial-headline">
+            Le numérique ne devrait pas compliquer votre travail.<br>
+            <span class="text-accent">Il devrait vous permettre de faire autrement.</span>
+          </h2>
+
+          <div class="editorial-body">
+            <p class="lead-text">
+              <strong>SHIFT²</strong> accompagne les entreprises, organisations et professionnels dans l'utilisation concrète du numérique.
+            </p>
+            <p>
+              Nous combinons formation, outils, création digitale et accompagnement pour transformer les besoins numériques en solutions simples, utiles et adaptées à chaque activité.
+            </p>
+          </div>
+
+          <!-- Piliers éditoriaux -->
+          <div class="intro-pillars">
+            <div class="pillar-card">
+              <div class="pillar-number">01</div>
+              <h3 class="pillar-title">Pratique</h3>
+              <p class="pillar-desc">Des apprentissages et des outils applicables immédiatement dans votre quotidien.</p>
+            </div>
+            <div class="pillar-card">
+              <div class="pillar-number">02</div>
+              <h3 class="pillar-title">Utile</h3>
+              <p class="pillar-desc">Aucune technologie superflue : chaque choix répond à un objectif précis.</p>
+            </div>
+            <div class="pillar-card">
+              <div class="pillar-number">03</div>
+              <h3 class="pillar-title">Durable</h3>
+              <p class="pillar-desc">Une autonomie réelle pour vos équipes à Ouagadougou et partout ailleurs.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       04 — SERVICES / SOLUTIONS (Section Majeure avec 5 visuels dédiés)
+       ========================================================================= -->
+  <section class="section section-solutions" id="solutions">
+    <div class="container">
+      <!-- Section Header -->
+      <div class="section-header text-center max-w-750">
+        <div class="section-pill">NOS SOLUTIONS</div>
+        <h2 class="section-title">Des solutions numériques qui servent vraiment votre activité.</h2>
+        <p class="section-intro-text">
+          Chaque organisation a ses propres besoins. Nous ne proposons donc pas simplement des outils : nous cherchons la bonne manière de les utiliser pour atteindre un objectif concret.
+        </p>
+      </div>
+
+      <!-- Solutions Grid -->
+      <div class="solutions-grid">
+
+        <!-- ==================== SERVICE 01 ==================== -->
+        <article class="service-card" data-service="Formation & IA">
+          <div class="service-media">
+            <img src="assets/images/service-formation.svg" alt="Formation & IA — SHIFT²" class="service-visual" loading="lazy">
+            <div class="service-badge">01 · FORMATION</div>
+          </div>
+          <div class="service-body">
+            <span class="service-number">01</span>
+            <h3 class="service-title">FORMATION &amp; IA</h3>
+            <p class="service-hook">Développez les compétences qui comptent.</p>
+            <p class="service-description">
+              Nous accompagnons les professionnels, équipes et organisations dans l'apprentissage des outils numériques et de l'intelligence artificielle. De la prise en main des outils à leur utilisation dans les tâches quotidiennes, nos formations privilégient la pratique, la simplicité et l'application réelle.
+            </p>
+            
+            <div class="service-features">
+              <div class="feature-item">
+                <span class="feature-dot"></span>
+                <div>
+                  <strong>Formation pratique</strong>
+                  <p>Des contenus adaptés au niveau et aux besoins du public.</p>
+                </div>
+              </div>
+              <div class="feature-item">
+                <span class="feature-dot"></span>
+                <div>
+                  <strong>Intelligence artificielle</strong>
+                  <p>Comprendre et utiliser l'IA de manière concrète et responsable.</p>
+                </div>
+              </div>
+              <div class="feature-item">
+                <span class="feature-dot"></span>
+                <div>
+                  <strong>Accompagnement</strong>
+                  <p>Passer de la formation à l'utilisation réelle.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="service-footer">
+              <a href="#contact" class="service-cta select-service-btn" data-need="Formation & IA">
+                <span>Découvrir la solution</span>
+                <span class="arrow-symbol">→</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- ==================== SERVICE 02 ==================== -->
+        <article class="service-card" data-service="Communication digitale">
+          <div class="service-media">
+            <img src="assets/images/service-comms.svg" alt="Communication Digitale — SHIFT²" class="service-visual" loading="lazy">
+            <div class="service-badge">02 · COMMUNICATION</div>
+          </div>
+          <div class="service-body">
+            <span class="service-number">02</span>
+            <h3 class="service-title">COMMUNICATION DIGITALE</h3>
+            <p class="service-hook">Donnez une vraie présence à votre activité.</p>
+            <p class="service-description">
+              Votre activité mérite une communication qui lui ressemble. Nous vous accompagnons dans la création et l'organisation de votre présence digitale afin de présenter vos activités, valoriser vos services et créer une relation plus claire avec votre audience.
+            </p>
+            
+            <div class="service-features">
+              <div class="feature-item">
+                <span class="feature-dot"></span>
+                <div>
+                  <strong>Stratégie de contenu</strong>
+                  <p>Définir quoi dire, comment le dire et à qui.</p>
+                </div>
+              </div>
+              <div class="feature-item">
+                <span class="feature-dot"></span>
+                <div>
+                  <strong>Création de contenus</strong>
+                  <p>Des visuels et contenus cohérents avec votre identité.</p>
+                </div>
+              </div>
+              <div class="feature-item">
+                <span class="feature-dot"></span>
+                <div>
+                  <strong>Présence digitale</strong>
+                  <p>Construire une communication régulière et professionnelle.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="service-footer">
+              <a href="#contact" class="service-cta select-service-btn" data-need="Communication digitale">
+                <span>Découvrir la solution</span>
+                <span class="arrow-symbol">→</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- ==================== SERVICE 03 ==================== -->
+        <article class="service-card" data-service="Création web">
+          <div class="service-media">
+            <img src="assets/images/service-web.svg" alt="Création Web — SHIFT²" class="service-visual" loading="lazy">
+            <div class="service-badge">03 · WEB</div>
+          </div>
+          <div class="service-body">
+            <span class="service-number">03</span>
+            <h3 class="service-title">CRÉATION WEB</h3>
+            <p class="service-hook">Une présence digitale pensée pour votre activité.</p>
+            <p class="service-description">
+              Un site web ne doit pas simplement être beau. Il doit être utile. Nous concevons des sites modernes, rapides et adaptés à vos objectifs : présenter votre activité, rassurer vos clients, valoriser vos services ou faciliter la prise de contact.
+            </p>
+            
+            <div class="service-features">
+              <div class="feature-item">
+                <span class="feature-dot"></span>
+                <div>
+                  <strong>Design sur mesure</strong>
+                  <p>Une interface pensée autour de votre identité.</p>
+                </div>
+              </div>
+              <div class="feature-item">
+                <span class="feature-dot"></span>
+                <div>
+                  <strong>Expérience utilisateur</strong>
+                  <p>Une navigation simple, claire et agréable.</p>
+                </div>
+              </div>
+              <div class="feature-item">
+                <span class="feature-dot"></span>
+                <div>
+                  <strong>Responsive</strong>
+                  <p>Une expérience adaptée au téléphone, à la tablette et à l'ordinateur.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="service-footer">
+              <a href="#contact" class="service-cta select-service-btn" data-need="Création web">
+                <span>Créer mon site</span>
+                <span class="arrow-symbol">→</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- ==================== SERVICE 04 ==================== -->
+        <article class="service-card" data-service="Visibilité locale">
+          <div class="service-media">
+            <img src="assets/images/service-local.svg" alt="Visibilité Locale — SHIFT²" class="service-visual" loading="lazy">
+            <div class="service-badge">04 · LOCAL</div>
+          </div>
+          <div class="service-body">
+            <span class="service-number">04</span>
+            <h3 class="service-title">VISIBILITÉ LOCALE</h3>
+            <p class="service-hook">Soyez trouvé au bon endroit, au bon moment.</p>
+            <p class="service-description">
+              Aujourd'hui, être présent en ligne ne suffit plus. Il faut aussi être facilement trouvable. Nous aidons les entreprises et professionnels à améliorer leur présence locale afin que leurs clients puissent plus facilement découvrir leur activité, leurs services et leurs coordonnées.
+            </p>
+            
+            <div class="service-features">
+              <div class="feature-item">
+                <span class="feature-dot"></span>
+                <div>
+                  <strong>Présence locale</strong>
+                  <p>Optimiser les informations essentielles de votre activité.</p>
+                </div>
+              </div>
+              <div class="feature-item">
+                <span class="feature-dot"></span>
+                <div>
+                  <strong>Visibilité</strong>
+                  <p>Faciliter la découverte de votre entreprise.</p>
+                </div>
+              </div>
+              <div class="feature-item">
+                <span class="feature-dot"></span>
+                <div>
+                  <strong>Confiance</strong>
+                  <p>Présenter une image claire et professionnelle.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="service-footer">
+              <a href="#contact" class="service-cta select-service-btn" data-need="Visibilité locale">
+                <span>Améliorer ma visibilité</span>
+                <span class="arrow-symbol">→</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- ==================== SERVICE 05 ==================== -->
+        <article class="service-card service-card-wide" data-service="Outils collaboratifs">
+          <div class="service-media">
+            <img src="assets/images/service-collab.svg" alt="Outils Collaboratifs — SHIFT²" class="service-visual" loading="lazy">
+            <div class="service-badge">05 · COLLABORATION</div>
+          </div>
+          <div class="service-body">
+            <span class="service-number">05</span>
+            <h3 class="service-title">OUTILS COLLABORATIFS</h3>
+            <p class="service-hook">Travaillez mieux, ensemble.</p>
+            <p class="service-description">
+              Les bons outils peuvent simplifier considérablement la manière dont une équipe travaille. Nous vous aidons à choisir, mettre en place et utiliser des outils collaboratifs adaptés à votre organisation : partage de documents, communication, organisation des tâches et travail à distance.
+            </p>
+            
+            <div class="service-features">
+              <div class="feature-item">
+                <span class="feature-dot"></span>
+                <div>
+                  <strong>Organisation</strong>
+                  <p>Centraliser et structurer le travail.</p>
+                </div>
+              </div>
+              <div class="feature-item">
+                <span class="feature-dot"></span>
+                <div>
+                  <strong>Collaboration</strong>
+                  <p>Faciliter le travail entre les membres d'une équipe.</p>
+                </div>
+              </div>
+              <div class="feature-item">
+                <span class="feature-dot"></span>
+                <div>
+                  <strong>Productivité</strong>
+                  <p>Réduire les tâches inutiles et mieux utiliser son temps.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="service-footer">
+              <a href="#contact" class="service-cta select-service-btn" data-need="Outils collaboratifs">
+                <span>Optimiser mon organisation</span>
+                <span class="arrow-symbol">→</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       05 — SECTION DIFFÉRENCIATION / NOTRE VISION
+       ========================================================================= -->
+  <section class="section section-vision" id="vision">
+    <div class="container">
+      <div class="vision-banner">
+        <div class="vision-decor">
+          <span class="vision-sym">²</span>
+        </div>
+        <div class="vision-content">
+          <div class="section-pill pill-light">NOTRE VISION</div>
+          <h2 class="vision-title">
+            Vous n'avez pas besoin de plus d'outils.<br>
+            <span class="text-accent">Vous avez besoin des bons outils.</span>
+          </h2>
+          <p class="vision-text">
+            Le numérique offre aujourd'hui des centaines de possibilités. Le véritable défi n'est donc plus de trouver un outil, mais de savoir lequel choisir, comment l'utiliser et comment l'adapter à votre réalité.
+          </p>
+          <p class="vision-highlight">
+            C'est là que SHIFT² intervient.
+          </p>
+          <div class="vision-manifesto">
+            <span class="manifesto-line"></span>
+            <p><strong>Nous simplifions la technologie pour la rendre réellement utile.</strong></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       06 — NOTRE APPROCHE (MÉTHODE)
+       ========================================================================= -->
+  <section class="section section-approche" id="approche">
+    <div class="container">
+      <div class="section-header text-center max-w-750">
+        <div class="section-pill">COMMENT NOUS TRAVAILLONS</div>
+        <h2 class="section-title">Comprendre. Simplifier. Transformer.</h2>
+      </div>
+
+      <div class="method-steps">
+        <!-- Step 1 -->
+        <div class="step-card">
+          <div class="step-header">
+            <span class="step-num">01</span>
+            <span class="step-indicator"></span>
+          </div>
+          <h3 class="step-title">COMPRENDRE</h3>
+          <p class="step-lead">Nous commençons par votre réalité.</p>
+          <p class="step-text">
+            Vos objectifs, vos contraintes, votre public et vos méthodes de travail nous permettent d'identifier le véritable besoin avant de proposer une solution.
+          </p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="step-card">
+          <div class="step-header">
+            <span class="step-num">02</span>
+            <span class="step-indicator"></span>
+          </div>
+          <h3 class="step-title">SIMPLIFIER</h3>
+          <p class="step-lead">Nous sélectionnons ce qui est réellement utile.</p>
+          <p class="step-text">
+            Pas besoin d'accumuler les outils. Nous privilégions les solutions compréhensibles, accessibles et adaptées à votre contexte.
+          </p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="step-card">
+          <div class="step-header">
+            <span class="step-num">03</span>
+            <span class="step-indicator"></span>
+          </div>
+          <h3 class="step-title">TRANSFORMER</h3>
+          <p class="step-lead">Nous passons de l'idée à l'usage.</p>
+          <p class="step-text">
+            Notre objectif est que la solution soit réellement utilisée et produise un résultat concret dans votre activité.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       07 — POUR QUI ? (NOS CLIENTS)
+       ========================================================================= -->
+  <section class="section section-clients" id="clients">
+    <div class="container">
+      <div class="section-header text-center max-w-750">
+        <div class="section-pill">NOS CLIENTS</div>
+        <h2 class="section-title">Le numérique n'est pas réservé aux entreprises technologiques.</h2>
+        <p class="section-intro-text">
+          SHIFT² accompagne celles et ceux qui veulent utiliser le numérique pour faire évoluer leur activité.
+        </p>
+      </div>
+
+      <div class="clients-grid">
+        <div class="client-card">
+          <div class="client-icon-wrap">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+          </div>
+          <h3 class="client-title">ENTREPRISES</h3>
+          <p class="client-desc">Améliorer leur présence, leur organisation et leur efficacité.</p>
+        </div>
+
+        <div class="client-card">
+          <div class="client-icon-wrap">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+          </div>
+          <h3 class="client-title">ORGANISATIONS</h3>
+          <p class="client-desc">Développer les compétences et moderniser leurs pratiques.</p>
+        </div>
+
+        <div class="client-card">
+          <div class="client-icon-wrap">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+          </div>
+          <h3 class="client-title">PROFESSIONNELS</h3>
+          <p class="client-desc">Mieux travailler, communiquer et développer leur activité.</p>
+        </div>
+
+        <div class="client-card">
+          <div class="client-icon-wrap">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+          </div>
+          <h3 class="client-title">PORTEURS DE PROJETS</h3>
+          <p class="client-desc">Transformer une idée en présence numérique crédible.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       08 — SECTION CONCEPT SHIFT² (Signature de marque)
+       ========================================================================= -->
+  <section class="section section-brand-concept" id="concept-shift">
+    <div class="container">
+      <div class="brand-concept-box">
+        <div class="concept-visual">
+          <div class="kinetic-symbol-stage">
+            <div class="pulse-ring ring-1"></div>
+            <div class="pulse-ring ring-2"></div>
+            <div class="symbol-core">
+              <img src="assets/logo/shift2-logo.png" alt="Emblème SHIFT²" class="concept-emblem">
+            </div>
+          </div>
+        </div>
+
+        <div class="concept-content">
+          <div class="section-pill">SHIFT²</div>
+          <h2 class="concept-title">
+            Changer n'est pas toujours ajouter.<br>
+            <span class="text-accent">Parfois, c'est simplement faire autrement.</span>
+          </h2>
+
+          <div class="concept-shifts">
+            <div class="shift-line"><span class="shift-bullet">›</span> Changer d'outil.</div>
+            <div class="shift-line"><span class="shift-bullet">›</span> Changer de méthode.</div>
+            <div class="shift-line"><span class="shift-bullet">›</span> Changer de manière de travailler.</div>
+            <div class="shift-line"><span class="shift-bullet">›</span> Changer de manière de communiquer.</div>
+          </div>
+
+          <p class="concept-conclusion">
+            C'est ce changement que nous voulons rendre plus simple.
+          </p>
+          <div class="concept-signature">
+            <strong>SHIFT² — Changez de mode.</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       09 — À PROPOS DE SHIFT²
+       ========================================================================= -->
+  <section class="section section-about" id="a-propos">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text-col">
+          <div class="section-pill">À PROPOS DE SHIFT²</div>
+          <h2 class="section-title">Une approche numérique centrée sur l'humain.</h2>
+          <div class="about-paragraphs">
+            <p>
+              <strong>SHIFT²</strong> est une entreprise basée à Ouagadougou qui accompagne les entreprises, organisations et professionnels dans leur évolution numérique.
+            </p>
+            <p>
+              Notre conviction est simple : <em>la technologie n'a de valeur que lorsqu'elle répond à un besoin réel.</em>
+            </p>
+            <p>
+              Nous privilégions donc les solutions utiles, accessibles et adaptées aux personnes qui doivent réellement les utiliser.
+            </p>
+          </div>
+
+          <div class="about-manifesto-badge">
+            <span class="manifesto-dot"></span>
+            <p><strong>La technologie est un moyen. Le progrès est l'objectif.</strong></p>
+          </div>
+        </div>
+
+        <div class="about-card-col">
+          <div class="about-highlight-card">
+            <div class="about-card-top">
+              <span class="about-city-tag">Ouagadougou · Burkina Faso</span>
+              <span class="about-badge-year">Depuis 2026</span>
+            </div>
+            <h3 class="about-card-title">Présence Locale, Vision Internationale</h3>
+            <p class="about-card-body">
+              Nous intervenons avec la même rigueur technique et le même niveau de finition auprès d'acteurs de la capitale burkinabè, en province ou à l'international grâce à nos méthodes collaboratives à distance.
+            </p>
+            <div class="about-contact-links">
+              <div class="about-contact-row">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                <span>+226 66 70 36 83 / +226 72 01 37 34</span>
+              </div>
+              <div class="about-contact-row">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span>Ouagadougou, Burkina Faso</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       10 — GRAND CTA IMMERSIF (AVANT CONTACT)
+       ========================================================================= -->
+  <section class="section section-precta">
+    <div class="container">
+      <div class="precta-box">
+        <div class="precta-glow"></div>
+        <div class="precta-content">
+          <h2 class="precta-title">PRÊT À CHANGER DE MODE ?</h2>
+          <p class="precta-text">
+            Vous avez une idée, un besoin ou un projet numérique ? Parlons-en.
+          </p>
+          <div class="precta-actions">
+            <a href="#contact" class="btn btn-primary btn-lg">
+              <span>Démarrer une conversation</span>
+              <svg class="btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+            <a href="#solutions" class="btn btn-outline btn-lg">
+              <span>Voir nos solutions</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       11 — SECTION CONTACT & CONVERSION
+       ========================================================================= -->
+  <section class="section section-contact" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Colonne Coordonnées Directes -->
+        <div class="contact-info-col">
+          <div class="section-pill">CONTACT</div>
+          <h2 class="section-title">Parlons de votre projet.</h2>
+          <p class="contact-intro">
+            Que vous cherchiez à améliorer votre communication, former votre équipe, créer votre présence web ou simplement trouver une meilleure manière d'utiliser le numérique, nous pouvons commencer par une conversation.
+          </p>
+
+          <div class="contact-card-direct">
+            <div class="direct-item">
+              <span class="direct-label">Entreprise</span>
+              <strong class="direct-val">SHIFT²</strong>
+            </div>
+            <div class="direct-item">
+              <span class="direct-label">Siège</span>
+              <span class="direct-val">Ouagadougou, Burkina Faso</span>
+            </div>
+            <div class="direct-item">
+              <span class="direct-label">Téléphones</span>
+              <div class="direct-phones">
+                <a href="tel:+22666703683" class="phone-link">+226 66 70 36 83</a>
+                <span class="phone-sep">·</span>
+                <a href="tel:+22672013734" class="phone-link">+226 72 01 37 34</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Boutons Directs Instantanés -->
+          <div class="contact-buttons-group">
+            <a href="tel:+22666703683" class="btn btn-secondary btn-full">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              <span>Appeler maintenant</span>
+            </a>
+            <a href="https://wa.me/22666703683?text=Bonjour%20SHIFT%C2%B2,%20je%20souhaite%20parler%20d'un%20projet%20num%C3%A9rique." target="_blank" rel="noopener" class="btn btn-whatsapp btn-full">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+              <span>Échanger sur WhatsApp</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Colonne Formulaire Professionnel -->
+        <div class="contact-form-col">
+          <form class="contact-form" id="contactForm" novalidate>
+            <h3 class="form-title">Envoyez-nous un message</h3>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fullName">Nom complet <span class="required">*</span></label>
+                <input type="text" id="fullName" name="fullName" class="form-control" placeholder="Ex. Mahamadi Ouédraogo" required>
+                <span class="field-error" id="fullNameError"></span>
+              </div>
+              <div class="form-group">
+                <label for="email">Adresse e-mail <span class="required">*</span></label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="exemple@entreprise.com" required>
+                <span class="field-error" id="emailError"></span>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone">Téléphone <span class="required">*</span></label>
+                <input type="tel" id="phone" name="phone" class="form-control" placeholder="+226 XX XX XX XX" required>
+                <span class="field-error" id="phoneError"></span>
+              </div>
+              <div class="form-group">
+                <label for="company">Entreprise / Organisation</label>
+                <input type="text" id="company" name="company" class="form-control" placeholder="Nom de votre structure">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="serviceNeed">Votre besoin <span class="required">*</span></label>
+              <div class="select-wrapper">
+                <select id="serviceNeed" name="serviceNeed" class="form-control" required>
+                  <option value="" disabled selected>Sélectionnez un domaine d'intervention</option>
+                  <option value="Formation & IA">Formation &amp; IA</option>
+                  <option value="Communication digitale">Communication digitale</option>
+                  <option value="Création web">Création web</option>
+                  <option value="Visibilité locale">Visibilité locale</option>
+                  <option value="Outils collaboratifs">Outils collaboratifs</option>
+                  <option value="Autre">Autre</option>
+                </select>
+              </div>
+              <span class="field-error" id="serviceNeedError"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="projectMessage">Parlez-nous de votre projet <span class="required">*</span></label>
+              <textarea id="projectMessage" name="projectMessage" rows="4" class="form-control" placeholder="Décrivez brièvement vos attentes, vos délais ou vos questions..." required></textarea>
+              <span class="field-error" id="projectMessageError"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block btn-submit" id="submitBtn">
+              <span>Envoyer ma demande</span>
+              <svg class="btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+            </button>
+
+            <!-- Message de confirmation après envoi -->
+            <div class="form-feedback success" id="formSuccessMessage" style="display: none;" role="alert">
+              <div class="feedback-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#16C784" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              </div>
+              <div class="feedback-text">
+                <strong>Merci.</strong>
+                <p>Votre demande a bien été envoyée. Nous reviendrons vers vous rapidement.</p>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       12 — FOOTER (Propre & Respectueux de la marque)
+       ========================================================================= -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <div class="footer-brand-col">
+          <div class="footer-logo-wrapper">
+            <img src="assets/logo/shift2-logo.png" alt="SHIFT²" class="footer-logo" width="190" height="80" loading="lazy">
+          </div>
+          <p class="footer-motto">Changer de mode. Faire autrement.</p>
+          <p class="footer-desc">
+            Accompagnement dans la transformation numérique : compétences, communication, web, visibilité et productivité.
+          </p>
+        </div>
+
+        <div class="footer-nav-col">
+          <h4 class="footer-heading">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#hero">Accueil</a></li>
+            <li><a href="#solutions">Solutions</a></li>
+            <li><a href="#approche">Notre approche</a></li>
+            <li><a href="#a-propos">À propos</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact-col">
+          <h4 class="footer-heading">Contact</h4>
+          <div class="footer-contact-details">
+            <p><strong>Ouagadougou, Burkina Faso</strong></p>
+            <p><a href="tel:+22666703683">+226 66 70 36 83</a></p>
+            <p><a href="tel:+22672013734">+226 72 01 37 34</a></p>
+            <div class="footer-wa-action">
+              <a href="https://wa.me/22666703683" target="_blank" rel="noopener" class="footer-wa-btn">
+                <span>Discuter sur WhatsApp</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">&copy; 2026 SHIFT². Tous droits réservés.</p>
+        <p class="footer-tagline">Ouagadougou · Burkina Faso</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       13 — BOUTON FLOTTANT WHATSAPP / APPEL RAPIDE
+       ========================================================================= -->
+  <div class="floating-quick-action" id="floatingQuickAction">
+    <a href="https://wa.me/22666703683?text=Bonjour%20SHIFT%C2%B2" target="_blank" rel="noopener" class="float-btn float-wa" aria-label="Contacter sur WhatsApp">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+      <span class="float-tooltip">WhatsApp direct</span>
+    </a>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
