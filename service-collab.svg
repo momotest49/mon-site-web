@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="100%" height="100%">
+  <defs>
+    <radialGradient id="collabGlow" cx="55%" cy="45%" r="60%">
+      <stop offset="0%" stop-color="#16C784" stop-opacity="0.3" />
+      <stop offset="60%" stop-color="#063B2A" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#063B2A" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B3324" stop-opacity="0.88" />
+      <stop offset="100%" stop-color="#041911" stop-opacity="0.96" />
+    </linearGradient>
+    <linearGradient id="trajGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#063B2A" />
+      <stop offset="50%" stop-color="#16C784" />
+      <stop offset="100%" stop-color="#55EBB2" />
+    </linearGradient>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="480" fill="#04150F" rx="20" />
+  <circle cx="440" cy="220" r="280" fill="url(#collabGlow)" />
+
+  <!-- Trajectory Arc -->
+  <path d="M 80 400 C 230 360, 340 260, 470 170 C 580 100, 680 70, 740 50" 
+        fill="none" stroke="url(#trajGrad)" stroke-width="3.5" filter="url(#softGlow)" />
+
+  <!-- Team Collaboration Workspace Board (Kanban / Workflow) -->
+  <g transform="translate(100, 90)">
+    <rect width="360" height="280" rx="18" fill="url(#cardGrad)" stroke="#16C784" stroke-opacity="0.45" stroke-width="1.5" />
+    
+    <!-- Header with Team avatars -->
+    <rect width="360" height="44" rx="18" fill="#041810" />
+    <text x="24" y="27" fill="#F7F8F4" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="700">ESPACE D'ÉQUIPE SHIFT²</text>
+    
+    <!-- Avatars -->
+    <g transform="translate(240, 10)">
+      <circle cx="12" cy="12" r="11" fill="#16C784" stroke="#041810" stroke-width="2" />
+      <circle cx="32" cy="12" r="11" fill="#0E8A57" stroke="#041810" stroke-width="2" />
+      <circle cx="52" cy="12" r="11" fill="#55EBB2" stroke="#041810" stroke-width="2" />
+      <circle cx="72" cy="12" r="11" fill="#063B2A" stroke="#041810" stroke-width="2" />
+      <text x="72" y="15" text-anchor="middle" fill="#FFFFFF" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="700">+4</text>
+    </g>
+
+    <!-- Workflow Columns -->
+    <g transform="translate(18, 56)">
+      <!-- Col 1 -->
+      <rect width="98" height="195" rx="8" fill="#051C14" />
+      <text x="12" y="20" fill="#16C784" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="700">À FAIRE</text>
+      <!-- Task 1 -->
+      <rect x="8" y="32" width="82" height="44" rx="6" fill="#0B2C1F" stroke="#16C784" stroke-opacity="0.2" />
+      <rect x="14" y="42" width="50" height="5" rx="2" fill="#F7F8F4" opacity="0.8" />
+      <rect x="14" y="52" width="30" height="4" rx="2" fill="#16C784" />
+      <!-- Task 2 -->
+      <rect x="8" y="84" width="82" height="44" rx="6" fill="#0B2C1F" stroke="#16C784" stroke-opacity="0.2" />
+      <rect x="14" y="94" width="60" height="5" rx="2" fill="#F7F8F4" opacity="0.8" />
+
+      <!-- Col 2: In Progress -->
+      <rect x="108" width="98" height="195" rx="8" fill="#051C14" />
+      <text x="120" y="20" fill="#F7F8F4" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="700">EN COURS</text>
+      <!-- Task active -->
+      <rect x="116" y="32" width="82" height="56" rx="6" fill="#073B29" stroke="#16C784" stroke-width="1" />
+      <rect x="124" y="44" width="66" height="5" rx="2" fill="#FFFFFF" />
+      <rect x="124" y="54" width="40" height="5" rx="2" fill="#16C784" />
+      <circle cx="186" cy="72" r="5" fill="#16C784" />
+
+      <!-- Col 3: Done -->
+      <rect x="218" width="98" height="195" rx="8" fill="#051C14" />
+      <text x="230" y="20" fill="#55EBB2" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="700">TERMINÉ</text>
+      <rect x="226" y="32" width="82" height="44" rx="6" fill="#0B2C1F" stroke="#16C784" stroke-opacity="0.2" />
+      <path d="M 236 54 L 240 58 L 248 50" stroke="#16C784" stroke-width="2" fill="none" />
+      <rect x="254" y="52" width="44" height="5" rx="2" fill="#F7F8F4" opacity="0.7" />
+    </g>
+  </g>
+
+  <!-- Synchronization & Productivity Floating Cards -->
+  <g transform="translate(480, 110)">
+    <rect width="240" height="130" rx="16" fill="url(#cardGrad)" stroke="#16C784" stroke-opacity="0.4" stroke-width="1.2" />
+    <circle cx="36" cy="40" r="16" fill="#16C784" fill-opacity="0.2" />
+    <path d="M 28 40 L 44 40 M 36 32 L 44 40 L 36 48" stroke="#16C784" stroke-width="2" fill="none" stroke-linecap="round" />
+    <text x="64" y="38" fill="#F7F8F4" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="700">Productivité +40%</text>
+    <text x="64" y="56" fill="#F7F8F4" opacity="0.65" font-family="'Plus Jakarta Sans', sans-serif" font-size="11">Moins d'emails, plus d'action</text>
+    
+    <rect x="20" y="80" width="200" height="1" fill="#16C784" opacity="0.2" />
+    <text x="20" y="102" fill="#16C784" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="600">Centralisation &amp; Documents</text>
+  </g>
+
+  <g transform="translate(500, 270)">
+    <rect width="220" height="110" rx="16" fill="url(#cardGrad)" stroke="#16C784" stroke-opacity="0.3" stroke-width="1" />
+    <text x="24" y="36" fill="#F7F8F4" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="700">Travail à distance</text>
+    <text x="24" y="56" fill="#F7F8F4" opacity="0.7" font-family="'Plus Jakarta Sans', sans-serif" font-size="11">Ouagadougou, régions &amp; monde</text>
+    
+    <g transform="translate(24, 76)">
+      <circle cx="6" cy="6" r="5" fill="#16C784" />
+      <text x="18" y="10" fill="#16C784" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700">Synchronisé en temps réel</text>
+    </g>
+  </g>
+</svg>

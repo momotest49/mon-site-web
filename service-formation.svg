@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="100%" height="100%">
+  <defs>
+    <radialGradient id="aiGlow" cx="65%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#16C784" stop-opacity="0.3" />
+      <stop offset="60%" stop-color="#063B2A" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="#063B2A" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B3324" stop-opacity="0.85" />
+      <stop offset="100%" stop-color="#041911" stop-opacity="0.95" />
+    </linearGradient>
+    <linearGradient id="trajGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#063B2A" />
+      <stop offset="60%" stop-color="#16C784" />
+      <stop offset="100%" stop-color="#A5F3D1" />
+    </linearGradient>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="480" fill="#04150F" rx="20" />
+  <circle cx="520" cy="200" r="260" fill="url(#aiGlow)" />
+
+  <!-- Grid mesh -->
+  <g opacity="0.12" stroke="#16C784" stroke-width="1">
+    <line x1="60" y1="380" x2="740" y2="380" />
+    <line x1="60" y1="300" x2="740" y2="300" />
+    <line x1="60" y1="220" x2="740" y2="220" />
+    <line x1="60" y1="140" x2="740" y2="140" />
+    <line x1="160" y1="60" x2="160" y2="420" />
+    <line x1="320" y1="60" x2="320" y2="420" />
+    <line x1="480" y1="60" x2="480" y2="420" />
+    <line x1="640" y1="60" x2="640" y2="420" />
+  </g>
+
+  <!-- Kinetic Elevation Arc -->
+  <path d="M 100 370 C 260 360, 360 280, 480 180 C 580 90, 680 70, 720 60" 
+        fill="none" stroke="url(#trajGrad)" stroke-width="3.5" filter="url(#softGlow)" />
+  <path d="M 120 395 C 280 385, 380 305, 500 205 C 600 115, 700 95, 740 85" 
+        fill="none" stroke="#16C784" stroke-opacity="0.25" stroke-dasharray="4,6" stroke-width="1.5" />
+
+  <!-- Neural Net AI Cluster -->
+  <g transform="translate(420, 100)">
+    <!-- Connections -->
+    <line x1="100" y1="80" x2="170" y2="30" stroke="#16C784" stroke-opacity="0.4" stroke-width="1.5" />
+    <line x1="100" y1="80" x2="180" y2="120" stroke="#16C784" stroke-opacity="0.4" stroke-width="1.5" />
+    <line x1="170" y1="30" x2="260" y2="60" stroke="#16C784" stroke-opacity="0.5" stroke-width="2" />
+    <line x1="180" y1="120" x2="260" y2="60" stroke="#16C784" stroke-opacity="0.5" stroke-width="2" />
+    <line x1="260" y1="60" x2="310" y2="20" stroke="#16C784" stroke-opacity="0.8" stroke-width="2.5" />
+
+    <!-- Nodes -->
+    <circle cx="100" cy="80" r="14" fill="#063B2A" stroke="#16C784" stroke-width="2" />
+    <circle cx="100" cy="80" r="5" fill="#16C784" />
+    <circle cx="170" cy="30" r="10" fill="#063B2A" stroke="#16C784" stroke-width="1.5" />
+    <circle cx="170" cy="30" r="4" fill="#16C784" />
+    <circle cx="180" cy="120" r="12" fill="#063B2A" stroke="#16C784" stroke-width="1.5" />
+    <circle cx="180" cy="120" r="4" fill="#16C784" />
+    
+    <!-- Central Active Brain Core -->
+    <circle cx="260" cy="60" r="22" fill="#074430" stroke="#16C784" stroke-width="2" filter="url(#softGlow)" />
+    <text x="260" y="65" text-anchor="middle" fill="#FFFFFF" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="800">IA</text>
+    
+    <circle cx="310" cy="20" r="8" fill="#16C784" filter="url(#softGlow)" />
+  </g>
+
+  <!-- Glass Card: Formation Pratique -->
+  <g transform="translate(80, 160)">
+    <rect width="280" height="170" rx="16" fill="url(#cardGrad)" stroke="#16C784" stroke-opacity="0.4" stroke-width="1" />
+    
+    <!-- Header pill -->
+    <rect x="20" y="20" width="130" height="24" rx="12" fill="#16C784" fill-opacity="0.15" />
+    <text x="85" y="36" text-anchor="middle" fill="#16C784" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="700">COMPÉTENCES 2026</text>
+    
+    <text x="20" y="74" fill="#F7F8F4" font-family="'Plus Jakarta Sans', sans-serif" font-size="18" font-weight="700">Pratique &amp; Usage Réel</text>
+    <text x="20" y="96" fill="#F7F8F4" opacity="0.7" font-family="'Plus Jakarta Sans', sans-serif" font-size="12">De la découverte à l'autonomie</text>
+    
+    <!-- Skill bars -->
+    <g transform="translate(20, 116)">
+      <rect width="240" height="6" rx="3" fill="#041E15" />
+      <rect width="205" height="6" rx="3" fill="#16C784" />
+    </g>
+    <g transform="translate(20, 134)">
+      <rect width="240" height="6" rx="3" fill="#041E15" />
+      <rect width="180" height="6" rx="3" fill="#0E8A57" />
+    </g>
+  </g>
+
+  <!-- Interactive Floating Badge -->
+  <g transform="translate(480, 290)">
+    <rect width="240" height="110" rx="14" fill="url(#cardGrad)" stroke="#16C784" stroke-opacity="0.3" stroke-width="1" />
+    <circle cx="36" cy="40" r="16" fill="#16C784" fill-opacity="0.2" />
+    <path d="M 30 40 L 34 44 L 43 35" fill="none" stroke="#16C784" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+    <text x="64" y="38" fill="#F7F8F4" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="700">IA Responsable</text>
+    <text x="64" y="56" fill="#F7F8F4" opacity="0.65" font-family="'Plus Jakarta Sans', sans-serif" font-size="11">Cas d'usage concrets</text>
+    <rect x="20" y="80" width="200" height="1" fill="#16C784" opacity="0.2" />
+    <text x="20" y="96" fill="#16C784" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="600">Accompagnement continu</text>
+  </g>
+</svg>
